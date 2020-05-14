@@ -5,7 +5,7 @@
 #' @param alpha alpha value for confidence interval. Default is 0.95 results 95% confidence Interval
 #' @author Shubhram Pandey
 #' @export
-metaHistoric = function(data,method = "beggPilote", alpha = 0.95, roundDigits = 4){
+metaHistoric = function(data = read.csv("data/sampleDataHistoric.csv"),method = "beggPilote", alpha = 0.95, roundDigits = 4){
   if (!require(dplyr)) {install.packages("dplyr"); library(dplyr)}
       #To ignore the warnings during usage
       options(warn = -1)

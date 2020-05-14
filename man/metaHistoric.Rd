@@ -4,7 +4,12 @@
 \alias{metaHistoric}
 \title{Incorporates historical control into the meta analysis}
 \usage{
-metaHistoric(data, method = "beggPilote", alpha = 0.95, roundDigits = 4)
+metaHistoric(
+  data = read.csv("data/sampleDataHistoric.csv"),
+  method = "beggPilote",
+  alpha = 0.95,
+  roundDigits = 4
+)
 }
 \arguments{
 \item{data}{A data frame having 5 columns 1. Study.Name, 2. Trt1_N, 3. Trt1_n, 4. Trt2_N and 5. Trt2_n. The column order is not important but the column name must be same as specified above}
