@@ -3,9 +3,10 @@
 #' @param data A data frame having 5 columns 1. Study.Name, 2. Trt1_N, 3. Trt1_n, 4. Trt2_N and 5. Trt2_n. The column order is not important but the column name must be same as specified above
 #' @param method which method user wants to use specify one among 1. beggPilote or 2. DerLiard. Default is "beggPilote
 #' @param alpha alpha value for confidence interval. Default is 0.95 results 95% confidence Interval
+#' @examples metaHistoric()
 #' @author Shubhram Pandey
 #' @export
-metaHistoric = function(data = read.csv("data/sampleDataHistoric.csv"),method = "beggPilote", alpha = 0.95, roundDigits = 4){
+metaHistoric = function(data = read.csv("data/sampleDataHistoric.csv"), method = "beggPilote", alpha = 0.95, roundDigits = 4){
   if (!require(dplyr)) {install.packages("dplyr"); library(dplyr)}
       #To ignore the warnings during usage
       options(warn = -1)

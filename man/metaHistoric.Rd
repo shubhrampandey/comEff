@@ -21,6 +21,9 @@ metaHistoric(
 \description{
 This function takes the data into N-n form and run meta analysis using Begg & Pilote Method and DarSimonian & Laird method
 }
+\examples{
+metaHistoric()
+}
 \author{
 Shubhram Pandey
 }
