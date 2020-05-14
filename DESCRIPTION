@@ -1,0 +1,13 @@
+Package: comEff
+Type: Package
+Title: Comparative Effectiveness functions
+Version: 0.1.0
+Author: Shubhram Pandey 
+Maintainer: Shubhram Pandey <shubhram1992@gmail.com>
+Description: This package helps in addrressing the problems of comparative effectiveness like (Meta analysis, Indirect treatment comparision,etc.)
+License: GPL-2
+Encoding: UTF-8
+LazyData: false
+Imports: 
+    dplyr
+RoxygenNote: 7.1.0
