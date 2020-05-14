@@ -4,12 +4,7 @@
 \alias{metaHistoric}
 \title{Incorporates historical control into the meta analysis}
 \usage{
-metaHistoric(
-  data = read.csv("data/sampleDataHistoric.csv"),
-  method = "beggPilote",
-  alpha = 0.95,
-  roundDigits = 4
-)
+metaHistoric(data, method = "beggPilote", alpha = 0.95, roundDigits = 4)
 }
 \arguments{
 \item{data}{A data frame having 5 columns 1. Study.Name, 2. Trt1_N, 3. Trt1_n, 4. Trt2_N and 5. Trt2_n. The column order is not important but the column name must be same as specified above}
@@ -17,15 +12,10 @@ metaHistoric(
 \item{method}{which method user wants to use specify one among 1. beggPilote or 2. DerLiard. Default is "beggPilote}
 
 \item{alpha}{alpha value for confidence interval. Default is 0.95 results 95% confidence Interval}
-
-\item{roundDigits}{rounding digits for the results. Default is 4}
 }
 \description{
-This function takes the data into N/n form and run meta analysis using Begg & Pilote Method and DarSimonian & Laird method
-}
-\examples{
-metaHistoric()
+This function takes the data into N-n form and run meta analysis using Begg & Pilote Method and DarSimonian & Laird method
 }
 \author{
-Shubhram Pandey \email {shubhram1992@gmail.com}
+Shubhram Pandey
 }
